@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9rem;
+    background-color: #0F0F0F;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+p {
+    text-align: justify;
+}
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 5.5rem;
+}
+h3 {
+    font-size: 5rem;
+}
+h4 {
+    font-size: 4.5rem;
+}
+h5 {
+    font-size: 4rem;
+}
+h6 {
+    font-size: 3.5rem;
+}
+center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+a {
+    text-decoration: none;
+}
+.main-bg {
+    color: white;
+}
+.classic-bg {
+    color: #3f3f3f;
+}
+.darkgray-bg {
+    background-color: #3f3f3f;
+}
+.black-text {
+    color: black;
+}
+.icon-home {
+    height: 35px;
+    width: 50px;
+}
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.section {
+    min-height: 100vh;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid #C0C0C0;
+    background-color: white;
+}
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.menu h1 {
+    font-size: 2.3rem;
+    color: black;
+}
+.menu h1 a {
+    color: inherit;
+    font-weight: 900;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+.menu ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: black;
+    position: relative;
+
+}
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: black;
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover {
+    background-color: #C0C0C0;
+}
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+    background-color: red;
+}
+.menu-spacing {
+    height: 6.5rem;
+}
+.home-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1rem 3rem 1rem 3rem;
+}
+.home-img img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+.intro-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 25% 25% 25%;
+    min-height: 100vh;
+}
+.intro-text-content,
+.intro-img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.intro-img img .intro-img svg {
+    max-width: 100%;
+    height: auto;
+}
+.divison-grid {
+    margin-right: 4rem;
+}
+.grid-animes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    margin-top: 4rem;
+}
+.title-animes {
+    font-size: 2.3rem;
+    text-align: center;
+}
+.synopsis {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+}
+.text-synopsis {
+    font-size: 1.3rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+}
+.grid p {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    overflow-y: scroll;
+}
+.section4 {
+    width: 90%;
+}
+.content {
+    height: 19rem;
+}
+.border-grid {
+    border: 0.3rem solid white;
+    border-radius: 2rem;
+}
+.galery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+.galery-img img {
+    transition: all 300ms ease-in-out;
+}
+.galery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+.grid-galery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    text-align: center;
+}
+.close-menu {
+    display: none;
+}
+.footer {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    font-family: 'Montserrat';
+    color: white !important;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 5 5  5px black;
+    border-radius: 10px
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
